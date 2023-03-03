@@ -11,7 +11,7 @@ function Navbar() {
             <header className="flex flex-col">
                 <nav className="navbar flex justify-between items-center border-b p-3">
                     <Link
-                        className={`border ${searchOpen == true ? "hidden" : " inline-block"
+                        className={` ${searchOpen == true ? "hidden" : " inline-block"
                             }`}
                         href=""
                     >
@@ -101,7 +101,7 @@ function Navbar() {
                     {searchOpen == true ? (
                         <span className="flex items-center w-full gap-2 ">
                             <input
-                                className="border rounded w-full py-2 px-3 mx-auto"
+                                className="border rounded w-full py-2 px-3 mx-auto transition duration-150 ease-out"
                                 type="text"
                                 placeholder="Search products..."
                                 name="search"
