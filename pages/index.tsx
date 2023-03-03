@@ -1,13 +1,12 @@
 import Navbar from "@/components/Navbar"
+import Hero from "./hero"
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
-        <div className="container">
-          <h1 className="">Home</h1>
-        </div>
+        <Hero />
       </main>
     </>
   )
